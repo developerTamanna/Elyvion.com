@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   title: "Elyvion - Your Gateway to Earning Freedom",
   description: "Experience curated shopping made simple, secure, and seamless. Elyvion brings together creative excellence and performance-driven results.",
   url: "https://elyvion-global.site",
-  ogImage: "/images/hero.png",
+  ogImage: "/logo/logo.png",
 };
 
 export const NAVIGATION = {

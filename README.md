@@ -1,4 +1,4 @@
-# Elyvion - Next.js Website
+# Elyvion - Next.js modern Website 
 
 A fully responsive Next.js implementation of the Elyvion website with mobile-first design.
 

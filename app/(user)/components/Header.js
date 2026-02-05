@@ -90,13 +90,13 @@ export default function Header() {
       {/* Overlay */}
       {sidebarOpen && (
         <div 
-          className="fixed inset-0  z-[60] transition-opacity"
+          className="fixed inset-0  z-60 transition-opacity"
           onClick={() => setSidebarOpen(false)}
         />
       )}
 
       {/* Right Sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-[280px] bg-[#1a5f6f] z-[70] transform transition-transform duration-300 ease-in-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 h-full w-70 bg-[#1a5f6f] z-70 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         {/* Close Button */}
         <div className="flex justify-end p-4">
           <button 
@@ -220,7 +220,7 @@ export default function Header() {
         <>
           {/* Modal Overlay */}
           <div 
-            className="fixed inset-0 z-[80] flex items-center justify-center p-4"
+            className="fixed inset-0 z-80 flex items-center justify-center p-4"
             onClick={() => setCustomerServiceModalOpen(false)}
           >
             {/* Modal Content */}
