@@ -6,13 +6,12 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section
-      className="relative h-screen w-full flex items-end overflow-hidden pb-24 sm:pb-32 lg:pb-40"
-      aria-label="Hero section showcasing earning freedom"
-    >
+  className="relative min-h-[85vh] w-full flex items-end overflow-hidden pb-16 sm:pb-20 lg:pb-24"
+>
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/cover.png"
+          src="/images/hero.jpeg"
           alt="Misty mountain landscape"
           fill
           priority
@@ -34,10 +33,10 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="max-w-3xl">
+      <div className="container mx-auto md:px-0 px-4 sm:px-8">
+        <div className="max-w-4xl pt-2 md:items-center">
           {/* Heading */}
-          <h1 className="font-extrabold leading-[1.05] mb-6 tracking-tight text-5xl sm:text-5xl md:text-6xl lg:text-6xl">
+          <h1 className="font-bold leading-[1.05] mb-6 tracking-tight text-5xl sm:text-5xl md:text-6xl lg:text-6xl">
             <span className="block text-black">our gateway to earning</span>
             <span className="text-black">freedom </span>
             <span className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
@@ -46,7 +45,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtext */}
-          <p className="max-w-lg mb-8 text-sm sm:text-base text-black/80 font-medium">
+          <p className="max-w-lg mb-8 text-sm md:text-xl sm:text-base text-black/80 font-medium">
             Experience curated shopping made simple, secure, and seamless.
           </p>
 

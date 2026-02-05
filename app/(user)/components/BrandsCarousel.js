@@ -6,7 +6,7 @@ import { BRANDS } from "../../config/constants";
 export default function BrandsCarousel() {
   return (
     <section className="bg-white border-t border-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-14">
+      <div className="container mx-auto  md:px-0 px-4 sm:px-6 py-8 sm:py-10 md:py-14">
         {/* Main Row */}
         <div
           className="
@@ -40,12 +40,12 @@ export default function BrandsCarousel() {
 
             <div
               className="
-  flex items-center
-  gap-8 sm:gap-10 md:gap-14
-  whitespace-nowrap
-  [animation:brand-scroll_22s_linear_infinite]
-  md:[animation-duration:30s]
-"
+              flex items-center
+              gap-8 sm:gap-10 md:gap-14
+              whitespace-nowrap
+              [animation:brand-scroll_22s_linear_infinite]
+              md:[animation-duration:30s]
+            "
             >
               {[...BRANDS, ...BRANDS].map((brand, index) => (
                 <div
