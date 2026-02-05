@@ -4,26 +4,25 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-6 md:px-10 lg:px-8 xl:px-20 2xl:px-28">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-12 lg:gap-20 items-center">
+    <section className="py-2  bg-white overflow-hidden">
+      <div className=" mx-auto px-17 ">
+        <div className="grid md:grid-cols-2 gap-0.5  items-center">
           {/* Left Column: Image - বড় হবে এবং Y-axis বরাবর সম্পূর্ণ */}
-          <div className="relative order-2 md:order-1">
-            <div className="relative order-2 md:order-1 h-[600px] sm:h-[700px] md:h-[800px] lg:h-[900px] xl:h-[1000px] 2xl:h-[1100px] w-full">
+          <div className="relative order-2 md:order-1 h-auto w-full">
+            <div className="relative order-2 md:order-1 w-full max-w-[498px] min-h-[400px] h-[750px]">
               <Image
                 src="/images/hero.png"
                 alt="Elyvion Team"
                 fill
-                className="object-cover rounded-xl"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                className="object-fit rounded-3xl w-full h-full object-center"
+                priority   
               />
             </div>
           </div>
 
           {/* Right Column: Content */}
           <div className="order-1 md:order-2 flex flex-col justify-center">
-            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight mb-6">
+            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight mb-10">
               We blend creative and performance
               <span className="absolute left-0 top-0 transform -translate-y-full -translate-x-full md:pr-2">
                 <svg
@@ -35,13 +34,10 @@ export default function AboutSection() {
               </span>
             </h2>
 
-            <p className="text-base text-gray-700 leading-relaxed mb-4">
+            <p className="text-base leading-snug text-black  mb-6">
               Founded in 2010 by serial entrepreneurs, Elyvion was built to
               bring together a versatile team of senior experts dedicated to
               helping businesses of all sizes thrive.
-            </p>
-
-            <p className="text-base text-gray-700 leading-relaxed mb-8">
               Today, we're a team of 40+ entrepreneurs with a proven track
               record of success.
             </p>

@@ -29,8 +29,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="shadow-lg h-24 fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
-        <div className="md:px-14 px-4  w-full h-full pt-4">
+      <header className="shadow-md h-24 fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
+        <div className="md:px-14 px-4  w-full h-full pt-2">
           <div className=" flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center">
