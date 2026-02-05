@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Dashboard",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 1,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 2,
+        "name": "Customer",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 2,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 15,
+        "name": "Tasklist Management",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 3,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 9,
+        "name": "Withdrawal",
+        "active": true,
+        "isShowPending": true,
+        "pendingNumber": 198,
+        "isRing": false,
+        "menuSequence": 4,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 8,
+        "name": "Users",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 5,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 4,
+        "name": "Master Data Management",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 6,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 44,
+        "name": "Ambassador Level",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 7,
+        "isWithdrawalRing": false
+    },
+    {
+        "id": 45,
+        "name": "Customer Tasklist Expiration",
+        "active": true,
+        "isShowPending": false,
+        "pendingNumber": null,
+        "isRing": false,
+        "menuSequence": 8,
+        "isWithdrawalRing": false
+    }
+]

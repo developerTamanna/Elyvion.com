@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "dayNumber": 1,
+        "bonusAmountGiven": null,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2026-01-26T12:17:11",
+        "updatedBy": "ADMIN",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 2,
+        "dayNumber": 2,
+        "bonusAmountGiven": 20.00,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-21T18:23:42",
+        "updatedBy": "TEAM 7",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 3,
+        "dayNumber": 3,
+        "bonusAmountGiven": 40.00,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-21T18:23:43",
+        "updatedBy": "TEAM 7",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 4,
+        "dayNumber": 4,
+        "bonusAmountGiven": 80.00,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-21T18:23:48",
+        "updatedBy": "TEAM 7",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 5,
+        "dayNumber": 5,
+        "bonusAmountGiven": 160.00,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-21T18:23:52",
+        "updatedBy": "TEAM 7",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 6,
+        "dayNumber": 6,
+        "bonusAmountGiven": null,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-26T20:17:09",
+        "updatedBy": "TEAM 4",
+        "customerBonusAmountGiven": null
+    },
+    {
+        "id": 7,
+        "dayNumber": 7,
+        "bonusAmountGiven": 640.00,
+        "createdDate": "2025-05-02T05:53:23",
+        "createdBy": "Backend",
+        "updatedDate": "2025-05-21T18:24:11",
+        "updatedBy": "TEAM 7",
+        "customerBonusAmountGiven": null
+    }
+]

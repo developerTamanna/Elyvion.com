@@ -1,0 +1,42 @@
+[
+    {
+        "id": 2294,
+        "amount": 3897.20,
+        "statusID": 2,
+        "statusName": "Approved",
+        "createdDate": "2026-01-31T20:40:29",
+        "numberCode": "191985"
+    },
+    {
+        "id": 2293,
+        "amount": 1797.36,
+        "statusID": 2,
+        "statusName": "Approved",
+        "createdDate": "2026-01-31T18:17:20",
+        "numberCode": "191984"
+    },
+    {
+        "id": 2290,
+        "amount": 661.30,
+        "statusID": 2,
+        "statusName": "Approved",
+        "createdDate": "2026-01-31T14:53:53",
+        "numberCode": "191981"
+    },
+    {
+        "id": 2287,
+        "amount": 258.07,
+        "statusID": 2,
+        "statusName": "Approved",
+        "createdDate": "2026-01-30T13:47:08",
+        "numberCode": "191978"
+    },
+    {
+        "id": 2280,
+        "amount": 100.00,
+        "statusID": 2,
+        "statusName": "Approved",
+        "createdDate": "2026-01-29T13:35:56",
+        "numberCode": "191971"
+    }
+]

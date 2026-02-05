@@ -1,0 +1,483 @@
+[
+    {
+        "id": 1,
+        "ambassadorLevel": 1,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 100.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 1",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 1.00,
+        "entitledMultipleLevels": [],
+        "eachSetTaskNumber": 30,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 25,
+        "taskPriceRangeFrom": 10.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 10.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 90,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 2,
+        "ambassadorLevel": 2,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 400.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 2",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 1.20,
+        "entitledMultipleLevels": [
+            {
+                "id": 1,
+                "ambassadorLevelID": 2,
+                "referralStageLevel": 1,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 2,
+                "ambassadorLevelID": 2,
+                "referralStageLevel": 2,
+                "incentivePercentage": 0.50
+            },
+            {
+                "id": 3,
+                "ambassadorLevelID": 2,
+                "referralStageLevel": 3,
+                "incentivePercentage": 0.25
+            }
+        ],
+        "eachSetTaskNumber": 30,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 30,
+        "taskPriceRangeFrom": 10.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 90,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 3,
+        "ambassadorLevel": 3,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 800.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 3",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 1.40,
+        "entitledMultipleLevels": [
+            {
+                "id": 4,
+                "ambassadorLevelID": 3,
+                "referralStageLevel": 1,
+                "incentivePercentage": 1.50
+            },
+            {
+                "id": 5,
+                "ambassadorLevelID": 3,
+                "referralStageLevel": 2,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 6,
+                "ambassadorLevelID": 3,
+                "referralStageLevel": 3,
+                "incentivePercentage": 0.50
+            }
+        ],
+        "eachSetTaskNumber": 30,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 35,
+        "taskPriceRangeFrom": 30.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 90,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 4,
+        "ambassadorLevel": 4,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 1600.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 4",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 1.60,
+        "entitledMultipleLevels": [
+            {
+                "id": 7,
+                "ambassadorLevelID": 4,
+                "referralStageLevel": 1,
+                "incentivePercentage": 3.00
+            },
+            {
+                "id": 8,
+                "ambassadorLevelID": 4,
+                "referralStageLevel": 2,
+                "incentivePercentage": 2.00
+            },
+            {
+                "id": 9,
+                "ambassadorLevelID": 4,
+                "referralStageLevel": 3,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 10,
+                "ambassadorLevelID": 4,
+                "referralStageLevel": 4,
+                "incentivePercentage": 0.50
+            }
+        ],
+        "eachSetTaskNumber": 30,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 40,
+        "taskPriceRangeFrom": 30.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 90,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 5,
+        "ambassadorLevel": 5,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 3000.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 5",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 1.80,
+        "entitledMultipleLevels": [
+            {
+                "id": 11,
+                "ambassadorLevelID": 5,
+                "referralStageLevel": 1,
+                "incentivePercentage": 7.00
+            },
+            {
+                "id": 12,
+                "ambassadorLevelID": 5,
+                "referralStageLevel": 2,
+                "incentivePercentage": 2.00
+            },
+            {
+                "id": 13,
+                "ambassadorLevelID": 5,
+                "referralStageLevel": 3,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 14,
+                "ambassadorLevelID": 5,
+                "referralStageLevel": 4,
+                "incentivePercentage": 0.50
+            },
+            {
+                "id": 15,
+                "ambassadorLevelID": 5,
+                "referralStageLevel": 5,
+                "incentivePercentage": 0.50
+            }
+        ],
+        "eachSetTaskNumber": 30,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 45,
+        "taskPriceRangeFrom": 30.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 90,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 6,
+        "ambassadorLevel": 6,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 4500.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 6",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 2.00,
+        "entitledMultipleLevels": [
+            {
+                "id": 16,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 1,
+                "incentivePercentage": 9.00
+            },
+            {
+                "id": 17,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 2,
+                "incentivePercentage": 5.00
+            },
+            {
+                "id": 18,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 3,
+                "incentivePercentage": 2.00
+            },
+            {
+                "id": 19,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 4,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 20,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 5,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 21,
+                "ambassadorLevelID": 6,
+                "referralStageLevel": 6,
+                "incentivePercentage": 1.00
+            }
+        ],
+        "eachSetTaskNumber": 32,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 50,
+        "taskPriceRangeFrom": 50.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 100000.00,
+        "requiredTaskCountToWithdraw": 96,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 7,
+        "ambassadorLevel": 7,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 9000.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 7",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 2.20,
+        "entitledMultipleLevels": [
+            {
+                "id": 22,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 1,
+                "incentivePercentage": 10.00
+            },
+            {
+                "id": 23,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 2,
+                "incentivePercentage": 7.00
+            },
+            {
+                "id": 24,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 3,
+                "incentivePercentage": 4.00
+            },
+            {
+                "id": 25,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 4,
+                "incentivePercentage": 3.00
+            },
+            {
+                "id": 26,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 5,
+                "incentivePercentage": 2.00
+            },
+            {
+                "id": 27,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 6,
+                "incentivePercentage": 1.00
+            },
+            {
+                "id": 28,
+                "ambassadorLevelID": 7,
+                "referralStageLevel": 7,
+                "incentivePercentage": 0.50
+            }
+        ],
+        "eachSetTaskNumber": 32,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 55,
+        "taskPriceRangeFrom": 50.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 15.00,
+        "maxWithdrawalAmount": 150000.00,
+        "requiredTaskCountToWithdraw": 96,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    },
+    {
+        "id": 8,
+        "ambassadorLevel": 8,
+        "requiredDirectReferrals": null,
+        "requiredIndirectReferrals": null,
+        "requiredMemberTypeID": null,
+        "requiredMemberTypeReferrals": null,
+        "cashBonusGiven": 15000.00,
+        "packageBonusGiven": null,
+        "weeklyIncentivePercentage": null,
+        "ambassadorLevelName": "VIP 8",
+        "customerAmbassadorLevelID": null,
+        "requiredMemberTypeAmbassadorLevelName": null,
+        "minTotalSalesAmount": null,
+        "maxTotalSalesAmount": null,
+        "monthlyIncentivePercentage": null,
+        "isWaiveWithdrawalFees": null,
+        "entitledCommissionLevels": null,
+        "incentivePercentage": 2.50,
+        "entitledMultipleLevels": [
+            {
+                "id": 29,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 1,
+                "incentivePercentage": 10.00
+            },
+            {
+                "id": 30,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 2,
+                "incentivePercentage": 8.00
+            },
+            {
+                "id": 31,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 3,
+                "incentivePercentage": 6.00
+            },
+            {
+                "id": 32,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 4,
+                "incentivePercentage": 4.00
+            },
+            {
+                "id": 33,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 5,
+                "incentivePercentage": 3.00
+            },
+            {
+                "id": 34,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 6,
+                "incentivePercentage": 2.00
+            },
+            {
+                "id": 35,
+                "ambassadorLevelID": 8,
+                "referralStageLevel": 7,
+                "incentivePercentage": 1.00
+            }
+        ],
+        "eachSetTaskNumber": 32,
+        "totalTaskSet": 3,
+        "comboTaskIncentivePercentage": 60,
+        "taskPriceRangeFrom": 50.00,
+        "taskPriceRangeTo": 100.00,
+        "minWithdrawalAmount": 100.00,
+        "maxWithdrawalAmount": 200000.00,
+        "requiredTaskCountToWithdraw": 96,
+        "withdrawalFees": 0.00,
+        "profitPriceRangeFrom": null,
+        "profitPriceRangeTo": null,
+        "cappingProfitAmount": null
+    }
+]

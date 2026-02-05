@@ -1,0 +1,26 @@
+[
+    {
+        "id": 4376,
+        "amount": 425.00,
+        "statusName": "Approved",
+        "createdDate": "2026-01-30T13:53:25",
+        "remark": null,
+        "numberCode": "158534"
+    },
+    {
+        "id": 4370,
+        "amount": 63.00,
+        "statusName": "Approved",
+        "createdDate": "2026-01-29T14:48:21",
+        "remark": null,
+        "numberCode": "158528"
+    },
+    {
+        "id": 4362,
+        "amount": 15.00,
+        "statusName": "Approved",
+        "createdDate": "2026-01-28T13:00:42",
+        "remark": null,
+        "numberCode": "158520"
+    }
+]

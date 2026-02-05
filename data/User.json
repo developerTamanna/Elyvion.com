@@ -1,0 +1,31 @@
+[
+    {
+        "id": 16,
+        "userName": "ADMIN",
+        "userID": 38,
+        "isAdmin": false,
+        "isSupervisor": false,
+        "projectID": 4,
+        "projectName": "SDMY",
+        "brand": "",
+        "isDisabled": false,
+        "createdBy": "STELLA",
+        "createdDate": "2025-10-30T16:05:28",
+        "updatedBy": "ADMIN",
+        "updatedDate": "2025-11-20T11:26:53",
+        "totalExpensesAmount": 0.0,
+        "totalSalesAmount": 0.0,
+        "totalThirdPartyAmount": 0.0,
+        "convertedAmountList": [],
+        "totalPayoutAmount": 0.0,
+        "totalPNLAmount": 0.0,
+        "agentCode": null,
+        "phoneNumber": null,
+        "waUrl": null,
+        "telegramUrl": "https://t.me/GigagigsCS",
+        "isPopUpJoinGroup": false,
+        "telegramUrl2": null,
+        "telegramUrl3": null,
+        "telegramUrl4": null
+    }
+]
