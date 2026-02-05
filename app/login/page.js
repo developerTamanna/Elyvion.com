@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-dynamic";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +9,7 @@ import { useAuth } from "../context/AuthContext";
 
 export default function LoginPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  /* const searchParams = useSearchParams(); */
   const { login, isAuthenticated } = useAuth();
   const [formData, setFormData] = useState({
     username: "",
@@ -19,10 +20,10 @@ export default function LoginPage() {
   // Redirect if already authenticated
   useEffect(() => {
     if (isAuthenticated) {
-      const redirect = searchParams.get("redirect") || "/";
+      const redirect = /* searchParams.get("redirect") || */ "/";
       router.push(redirect);
     }
-  }, [isAuthenticated, router, searchParams]);
+  }, [isAuthenticated, router,/*  searchParams */]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,7 +35,7 @@ export default function LoginPage() {
       login();
       
       // Redirect to the intended page or home
-      const redirect = searchParams.get("redirect") || "/";
+      const redirect = /* searchParams.get("redirect")  */ "/";
       router.push(redirect);
     } else {
       setError("Please enter both username and password");

@@ -70,7 +70,7 @@ export default function ServicesSection() {
     <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black">
             Our full-service<br />offering...
           </h2>
           
