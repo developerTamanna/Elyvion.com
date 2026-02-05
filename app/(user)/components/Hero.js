@@ -1,63 +1,83 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section 
-      className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-start overflow-hidden"
-      aria-label="Hero section"
+    <section
+      className="relative h-screen w-full flex items-end overflow-hidden pb-24 sm:pb-32 lg:pb-40"
+      aria-label="Hero section showcasing earning freedom"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image 
-          src="/images/cover.png" 
-          alt="Misty mountain landscape background representing freedom and opportunity"
+      {/* Background */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/cover.png"
+          alt="Misty mountain landscape"
           fill
-          className="object-cover"
           priority
-          quality={90}
-          sizes="100vw"
+          quality={100}
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-400/60 to-blue-300/60" aria-hidden="true" />
+
+        {/* LEFT-BOTTOM BLUE OVERLAY ONLY */}
+        <div
+          className="
+            absolute inset-0
+            bg-gradient-to-tr
+            from-blue-300/55
+            via-sky-100/25
+            to-transparent
+          "
+          aria-hidden="true"
+        />
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 sm:py-16">
-        <div className="max-w-4xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-            <span className="text-black">our gateway to earning</span>
-            <br />
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="max-w-3xl">
+          {/* Heading */}
+          <h1 className="font-extrabold leading-[1.05] mb-6 tracking-tight text-5xl sm:text-5xl md:text-6xl lg:text-6xl">
+            <span className="block text-black">our gateway to earning</span>
             <span className="text-black">freedom </span>
-            <span className="text-white drop-shadow-lg">wherever you are.</span>
+            <span className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
+              wherever you are.
+            </span>
           </h1>
-          
-          <p className="text-base sm:text-lg md:text-xl text-black mb-6 sm:mb-8 max-w-2xl drop-shadow-sm">
+
+          {/* Subtext */}
+          <p className="max-w-lg mb-8 text-sm sm:text-base text-black/80 font-medium">
             Experience curated shopping made simple, secure, and seamless.
           </p>
 
-          <div className="flex items-center gap-4">
-            <Link 
-              href="/services"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium hover:bg-gray-900 transition-all duration-300 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
-              aria-label="Browse our services"
-            >
-              <span>Browse Our Services</span>
-              <svg 
-                className="w-5 h-5 sm:w-6 sm:h-6" 
-                fill="none" 
-                stroke="currentColor" 
+          {/* CTA */}
+          <Link
+            href="/services"
+            className="group inline-flex items-center bg-black rounded-full p-1.5 pr-6 hover:pr-1.5 hover:pl-6 transition-all duration-500 ease-in-out w-fit"
+          >
+            <div className="order-2 group-hover:order-1 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 text-white group-hover:bg-white group-hover:text-black transition-colors duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-4 sm:w-5 sm:h-5"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
               </svg>
-            </Link>
-          </div>
+            </div>
+
+            <span className="order-1 group-hover:order-2 text-white font-medium text-sm sm:text-base px-3 whitespace-nowrap">
+              Browse Our Services
+            </span>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
-
