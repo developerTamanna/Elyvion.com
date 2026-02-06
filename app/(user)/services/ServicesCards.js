@@ -69,8 +69,8 @@ export default function ServicesCards() {
   return (
     <section className="w-full md:px-8 lg:px-16 py-24 bg-gray-50">
       <div className="w-full mx-auto px-6">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8 sm:mb-12">
-          <h2 className="text-4xl  font-bold text-black">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-black">
             Our full-service<br />offering...
           </h2>
           

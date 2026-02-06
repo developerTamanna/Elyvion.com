@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CTASection() {
   return (
-    <section className="w-full pt-16 md:px-6 lg:px-14 bg-transparent -mb-15 relative z-10">
+    <section className="w-full pt-14 md:px-6 lg:px-14 bg-transparent md:-mb-15 mb-14 relative z-10">
       <div className="md:px-20 w-full px-6 mx-auto relative">
         <span className="absolute left-6 -top-5">
           <svg viewBox="0 0 35 33" className="fill-current text-black w-8 h-8">
