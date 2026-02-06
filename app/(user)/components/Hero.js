@@ -6,10 +6,10 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section
-      className="relative mt-22 h-auto lg:min-h-[100vh]  min-h-[80vh]  w-full flex items-end overflow-hidden pb-16 sm:pb-20 lg:pb-24"
+      className="relative mt-22    h-[100vh]  max-h-[470px] md:max-h-[470px] lg:max-h-[530px]  w-full flex items-end overflow-auto pb-16 sm:pb-20 lg:pb-24"
       >
       {/* Background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0  -z-10 w-full">
         <Image
           src="/images/hero.jpeg"
           alt="Misty mountain landscape"
@@ -33,10 +33,10 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container absolute lg:left-7 left-0 bottom-20 mx-auto md:px-0 px-4 sm:px-8">
-        <div className="max-w-4xl pt-2 md:items-center">
+      <div className="w-full px-7 xl:px-20  absolute   left-0 bottom-20 ">
+        <div className=" w-full lg:w-[63.81%]  md:items-center">
           {/* Heading */}
-          <h1 className="font-bold h-auto  leading-none mb-6 tracking-tight text-3xl sm:text-5xl ">
+          <h1 className="font-bold h-auto  leading-none mb-6 tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-[50.5px]  2xl:text-7xl ">
             <span className="block text-black">our gateway to earning freedom<span className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]"> wherever you are.</span></span>
           </h1>
 
