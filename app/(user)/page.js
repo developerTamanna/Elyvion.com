@@ -1,12 +1,11 @@
-import Hero from "./components/Hero";
-import BrandsCarousel from "./components/BrandsCarousel";
-import ScrollingBanner from "./components/ScrollingBanner";
-import ServicesSection from "./components/ServicesSection";
-import AboutSection from "./components/AboutSection";
-import AwardsSection from "./components/AwardsSection";
-import CertificateSection from "./components/CertificateSection";
-import CTASection from "./components/CTASection";
-
+import AboutSection from './components/AboutSection';
+import AwardsSection from './components/AwardsSection';
+import BrandsCarousel from './components/BrandsCarousel';
+import CertificateSection from './components/CertificateSection';
+import CTASection from './components/CTASection';
+import Hero from './components/Hero';
+import ScrollingBanner from './components/ScrollingBanner';
+import ServicesSection from './components/ServicesSection';
 
 export default function Home() {
   return (
@@ -19,8 +18,6 @@ export default function Home() {
       <ServicesSection />
       <CertificateSection />
       <CTASection />
-
     </>
   );
 }
-
