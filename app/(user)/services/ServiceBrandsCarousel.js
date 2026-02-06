@@ -9,11 +9,11 @@ export default function BrandsAndCTA() {
     <>
       {/* BRANDS SECTION  */}
       <section className="w-full bg-white border-t border-gray-100">
-        <div className="px-4 lg:px-8 md:px-8 mx-auto py-8 sm:py-10 md:py-19">
+        <div className="px-4 md:px-14 mx-auto py-8 sm:py-10 md:py-14">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             {/* LEFT TEXT */}
             <div className="h-[100px] p-2 w-fit text-center shrink-0">
-              <h2 className="text-base text-left font-semibold text-gray-900">
+              <h2 className="text-base text-left font-semibold text-black">
                 We work with brands <br />
                 across multiple <br />
                 industries and <br />
