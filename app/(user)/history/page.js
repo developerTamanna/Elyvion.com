@@ -1,8 +1,9 @@
+
 import HistoryPage from './HistoryPage';
 const page = () => {
   return (
     <div>
-      <HistoryPage></HistoryPage>
+      <HistoryPage/>
     </div>
   );
 };
