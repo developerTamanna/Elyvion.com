@@ -8,18 +8,20 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+
+    // ⭐ ADD THIS PART
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
   },
-  
-  // Compression
+
   compress: true,
-  
-  // Performance optimizations
   poweredByHeader: false,
-  
-  // React strict mode
   reactStrictMode: true,
-  
-  // Experimental features for better performance
+
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
