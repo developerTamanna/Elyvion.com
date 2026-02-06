@@ -11,8 +11,8 @@ export default function ServiceBrandsCarousel() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           {/* LEFT TEXT */}
           <div className="h-[100px] p-2 w-fit text-center  shrink-0">
-            <h2 className="text-base  font-semibold text-gray-900">
-              We work with brands across multiple industries and verticals…
+            <h2 className="text-base text-left  font-semibold text-gray-900">
+              We work with brands <br />across multiple <br />industries and <br />verticals…
             </h2>
           </div>
 
