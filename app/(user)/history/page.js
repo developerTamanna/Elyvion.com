@@ -1,5 +1,5 @@
-import HistoryPage from "./HistoryPage";
 
+import HistoryPage from './HistoryPage';
 const page = () => {
   return (
     <div>
