@@ -7,11 +7,11 @@ import { AWARDS } from '../../config/constants';
 export default function AwardsSection() {
   return (
     <section className="py-6  bg-white overflow-hidden">
-      <div className=" mx-auto px-17 h-auto ">
-        <div className="flex flex-wrap flex-col md:flex-row md:flex-nowrap justify-between items-center gap-12 min-h-[450px]  items-between justify-center">
+      <div className=" mx-auto px-5 md:px-10 lg:px-17 xl:px-30 2xl:px-48 h-auto ">
+        <div className="flex flex-wrap flex-col md:flex-row md:flex-nowrap md:justify-between items-center md:gap-12  min-h-[450px] xl:min-h-[500px]  items-between justify-center">
           {/* Left Column: Image - বড় হবে এবং Y-axis বরাবর সম্পূর্ণ */}
-          <div className="relative  order-1 md:order-2   w-full max-w-[480px] min-h-[450px] flex items-center justify-center">
-            <div className="  relative order-1 md:order-2 w-full max-w-[480px] max-h-[400px] h-[390px]">
+          <div className="relative  order-1 md:order-2 md:w-[42%] lg:w-[47%]  w-full lg:max-w-full max-w-[500px] min-h-[450px] xl:h-[480px] flex items-center justify-center">
+            <div className="  relative order-1 md:order-2 w-full  max-w-[500px] max-h-[400px] h-[390px] md:aspect-[12/9] xl:aspect-[10/8] md:h-auto xl:h-[480px] lg:max-w-full  overflow-hidden">
               <Image
                 src="/images/wining.png"
                 alt="Elyvion Team"
@@ -23,8 +23,8 @@ export default function AwardsSection() {
           </div>
 
           {/* Right Column: Content */}
-          <div className="order-2 flex-1 md:order-1 flex flex-col justify-start items-start">
-            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight mb-10">
+          <div className="md:pl-0 pl-2 order-2 h-full flex-1 md:order-1 flex flex-col justify-center items-start">
+            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight lg:mb-10 mb-7">
               We're multi award-winning
               <span className="absolute left-0 top-0 transform -translate-y-full -translate-x-full md:pr-2">
                 <svg
@@ -44,10 +44,10 @@ export default function AwardsSection() {
             </p>
 
             {/* Awards List */}
-            <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 list-none">
+            <ul className="space-y-2 lg:space-y-3 mb-6 sm:mb-8 list-none">
               {AWARDS.map((award, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-black flex items-center justify-center mt-1">
+                <li key={index} className="flex items-start gap-1 md:gap-3">
+                  <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-black flex items-center justify-center mt-1 ">
                     <svg
                       className="w-3 h-3 sm:w-4 sm:h-4 text-white"
                       fill="currentColor"
@@ -61,7 +61,7 @@ export default function AwardsSection() {
                       />
                     </svg>
                   </div>
-                  <span className="text-base sm:text-lg text-gray-800">
+                  <span className="text-base  text-gray-800">
                     {award}
                   </span>
                 </li>

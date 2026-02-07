@@ -44,12 +44,12 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="w-full md:px-8 lg:px-16 py-16 md:py-24 bg-gray-50 overflow-hidden">
+    <section className="w-full md:px-2 xl:px-4 2xl:px-14 py-16 md:py-24 bg-gray-50 overflow-hidden">
       <div className="w-full mx-auto px-6">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-black">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-black">
             Our full-service<br />offering...
           </h2>
           
@@ -85,13 +85,13 @@ export default function ServicesSection() {
 
           <div 
             ref={scrollContainerRef}
-            className="flex gap-8 overflow-x-auto scrollbar-hide scroll-smooth"
+            className="flex gap-8  overflow-x-auto w-full scrollbar-hide scroll-smooth "
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {SERVICES.map((service) => (
               <article 
                 key={service.id}
-                className="service-card flex-shrink-0 w-[88%] md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-white rounded-3xl p-6 sm:p-8 shadow-lg border-t-4 border-black flex flex-col"
+                className="service-card  flex-shrink-0 w-full md:w-[calc(50%-16px)] lg:w-[calc(33%-20px)] bg-white rounded-3xl p-6 sm:p-8 shadow-lg border-t-4 border-black flex flex-col"
               >
                 {/* Icon and Title */}
                 <div className="flex items-center gap-4 mb-6">
@@ -139,7 +139,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Mobile View All Button - Visible only on Mobile at the bottom */}
-        <div className="mt-10 flex justify-center md:hidden">
+        <div className="mt-10 flex justify-center md:hidden ">
           <Link
             href="/services"
             className="group inline-flex items-center bg-black text-white px-8 py-3 rounded-full font-semibold text-base transition-all active:scale-95"
