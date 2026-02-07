@@ -2,63 +2,71 @@ import React from 'react';
 
 export default function InitiateCampaign() {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center pt-10 px-4 md:px-0 font-sans text-slate-800">
+    <div className="min-h-screen mt-20 flex flex-col items-center py-6 px-2 font-sans text-slate-800">
       {/* Main Container */}
-      <main className="w-full max-w-3xl">
-        {/* Page Title */}
-        <h1 className="text-xl md:text-2xl font-semibold text-center mb-8 text-slate-900">
-          Initiate Campaign
-        </h1>
-
-        {/* Campaign Type Label */}
-        <div className="mb-3 text-sm font-medium">
-          <span className="text-slate-900">Campaign Type: </span>
-          <span className="text-slate-600 font-normal">
-            Golden Egg Campaign
-          </span>
+              {/* Page Header (Centered text with border bottom) */}
+        <div className="flex w-full py-2 border-b border-slate-200 justify-start items-start">
+          <div className='w-full px-4 md:px-40'>
+            <h1 className="text-lg items-start md:ml-[33.5%] font-semibold text-slate-700">
+            Initiate Campaign
+          </h1>
+          </div>
         </div>
+      <main className="w-full max-w-xl bg-white overflow-hidden min-h-[90vh] md:min-h-fit">
+      
 
-        {/* Grid Layout for Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          {/* Card 1: Account Balance */}
-          <div className="border border-slate-300 rounded-xl p-5 bg-white flex flex-col justify-center h-28 shadow-sm">
-            <p className="text-xs text-slate-400 mb-1">Account Balance</p>
-            <p className="text-xl font-bold text-slate-900">RM -6,965.00</p>
-            <p className="text-xs text-red-500 mt-1 font-medium">
+        <div className="p-4 md:p-8">
+          {/* Campaign Type Label */}
+          <div className="mb-6 text-sm font-semibold flex items-center gap-1">
+            <span className="text-slate-900">Campaign Type:</span>
+            <span className="text-slate-600 font-medium">Golden Egg Campaign</span>
+          </div>
+
+
+          <div className="grid grid-cols-2 gap-3 md:gap-4 mb-4">
+            
+            {/* Account Balance */}
+            <div className="border border-slate-600 rounded-xl p-4 md:gap-y-2 bg-white flex flex-col justify-between h-28 sm:aspect-4/3 md:aspect-auto md:h-20">
+              <div>
+                <p className="text-[16px] md:text-xs text-slate-400 md:font-medium text-semibold leading-none mb-2">Account Balance</p>
+                <p className="md:text-base text-xl font-semibold text-slate-900 leading-none">RM -6,965.00</p>
+              </div>
+              <p className="text-[10px] md:text-xs pb-1 text-red-500 font-bold">
+                Insufficient Balance
+              </p>
+            </div>
+
+            {/* Number of Campaigns */}
+            <div className="border border-slate-600 rounded-xl p-4 bg-white flex flex-col justify-start h-28 sm:aspect-4/3 md:aspect-auto md:h-20">
+              <p className="text-[16px] md:text-xs text-slate-400 md:font-medium text-semibold leading-none mb-2">Number of Campaigns</p>
+              <p className="md:text-base text-xl font-semibold text-slate-900">30/30</p>
+            </div>
+
+            {/* Today's Commission */}
+            <div className="border border-slate-600 rounded-xl p-4 bg-white flex flex-col justify-start h-28 sm:aspect-4/3 md:aspect-auto md:h-20">
+              <p className="text-[16px] md:text-xs text-slate-400 md:font-medium text-semibold leading-none mb-2">Today's Commission</p>
+              <p className="md:text-base text-xl font-semibold text-slate-900">RM 0.00</p>
+            </div>
+
+            {/* Withdrawal Amount */}
+            <div className="border border-slate-600 rounded-xl p-4 bg-white flex flex-col justify-start h-28 sm:aspect-4/3 md:aspect-auto md:h-20">
+              <p className="text-[16px] md:text-xs text-slate-400 md:font-medium text-semibold leading-none mb-2">Withdrawal Amount</p>
+              <p className="md:text-base text-xl font-semibold text-slate-900">RM 24,427.50</p>
+            </div>
+
+            {/* Trial Balance (Full Width) */}
+            <div className="col-span-2 border border-slate-600 rounded-xl p-4 bg-[#f2e9d7] flex items-center justify-between h-14 md:h-14 mt-2">
+              <p className="text-xs md:text-sm text-slate-500">Trial Balance</p>
+              <p className="text-sm md:text-base font-semibold text-slate-900">RM 0.00</p>
+            </div>
+          </div>
+
+          {/* Action Button: Rounded-full for pill shape */}
+          <div className="mt-8">
+            <button className="w-full bg-[#F6BC48] hover:bg-[#e0ab41] text-white font-bold py-3.5 md:py-4 rounded-full shadow-sm transition-all text-sm md:text-base active:scale-95">
               Insufficient Balance
-            </p>
+            </button>
           </div>
-
-          {/* Card 2: Number of Campaigns */}
-          <div className="border border-slate-300 rounded-xl p-5 bg-white flex flex-col justify-center h-28 shadow-sm">
-            <p className="text-xs text-slate-400 mb-1">Number of Campaigns</p>
-            <p className="text-xl font-bold text-slate-900">30/30</p>
-          </div>
-
-          {/* Card 3: Today's Commission */}
-          <div className="border border-slate-300 rounded-xl p-5 bg-white flex flex-col justify-center h-28 shadow-sm">
-            <p className="text-xs text-slate-400 mb-1">Today's Commission</p>
-            <p className="text-xl font-bold text-slate-900">RM 0.00</p>
-          </div>
-
-          {/* Card 4: Withdrawal Amount */}
-          <div className="border border-slate-300 rounded-xl p-5 bg-white flex flex-col justify-center h-28 shadow-sm">
-            <p className="text-xs text-slate-400 mb-1">Withdrawal Amount</p>
-            <p className="text-xl font-bold text-slate-900">RM 24,427.50</p>
-          </div>
-
-          {/* Card 5: Trial Balance (Full Width) */}
-          <div className="md:col-span-2 border border-slate-300 rounded-xl p-5 bg-[#FAF9F0] flex items-center justify-between h-20 shadow-sm">
-            <p className="text-xs text-slate-500">Trial Balance</p>
-            <p className="text-lg font-bold text-slate-900">RM 0.00</p>
-          </div>
-        </div>
-
-        {/* Action Button */}
-        <div className="flex justify-center mt-8">
-          <button className="w-full max-w-full md:max-w-2xl bg-[#F6BC48] hover:bg-[#e0ab41] text-white font-semibold py-3 rounded-full shadow-sm transition-colors duration-200">
-            Insufficient Balance
-          </button>
         </div>
       </main>
     </div>
