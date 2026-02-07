@@ -74,8 +74,8 @@ export default function CertificateSection() {
             </div>
             <div className=" overflow-auto ">
               {/* Inner part */}
-              <div className="flex-1 min-h-screen h-full  border-5 border-gray-100 rounded-tl-md rounded-bl-md bg-white p-4 sm:p-6 flex flex-col items-center">
-                <div className="relative w-1/3 h-full max-h-[500px] shadow-md rounded-md  bg-white overflow-hidden">
+              <div className="flex-1 min-h-screen h-full  border-5 border-gray-100 rounded-tl-md rounded-bl-md bg-white p-2 sm:p-6 flex flex-col items-center">
+                <div className="relative w-[350px] h-full max-h-[500px] shadow-md rounded-md  bg-white overflow-hidden">
                   <Image 
                     src={images[currentIndex]} 
                     alt={`Page ${currentIndex + 1}`} 
