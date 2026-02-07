@@ -19,10 +19,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-white py-12 md:py-20">
-      <div className="container mx-auto px-6 md:px-10 lg:px-16">
+    <footer className="bg-black text-white py-12 md:py-24 relative z-10">
+      <div className="w-full mx-auto px-6 md:px-24 md:mt-12">
         
-        {/* Main Content Wrapper: Desktop এ সব Left-aligned */}
+        {/* Main Content Wrapper */}
         <div className="flex flex-col md:flex-row justify-start items-start gap-12 md:gap-32 lg:gap-48">
           
           {/* 1. Logo Section */}
@@ -36,8 +36,8 @@ export default function Footer() {
             />
           </div>
 
-          {/* 2. Links Section: Mobile এ পাশাপাশি ২ কলাম, Desktop এও পাশাপাশি */}
-          <div className="grid grid-cols-2 gap-10 md:flex md:flex-row md:gap-32 lg:gap-48">
+          {/* 2. Links Section*/}
+          <div className="grid grid-cols-2 gap-10 md:pl-14 md:flex md:flex-row md:gap-32 lg:gap-48 w-full md:w-auto">
             
             {/* Our Services Column */}
             <div className="flex flex-col">
@@ -49,7 +49,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-gray-400 hover:text-white transition-all text-sm md:text-base font-medium"
+                      className="text-gray-300 hover:text-white transition-all text-sm md:text-base font-medium"
                     >
                       {link.name}
                     </Link>
@@ -68,7 +68,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link 
                       href={link.href}
-                      className="text-gray-400 hover:text-white transition-all text-sm md:text-base font-medium"
+                      className="text-gray-300 hover:text-white transition-all text-sm md:text-base font-medium"
                     >
                       {link.name}
                     </Link>
@@ -79,11 +79,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 3. Bottom Bar: Copyright Section (Left aligned) */}
-        <div className="mt-12 md:mt-20 pt-8">
-          <div className="flex flex-row gap-6 md:gap-10 text-gray-500 text-xs md:text-sm font-medium">
-            <span>©2025 Elyvion</span>
-            <span>All rights reserved</span>
+        {/* 3. Bottom Bar: Copyright Section */}
+        <div className="mt-12 md:mt-20 pt-8 border-t border-gray-800 pb-8 md:pb-0">
+          <div className="flex flex-row items-center gap-6 md:gap-10 text-gray-500 text-[10px] sm:text-xs md:text-sm font-medium">
+            <span className="whitespace-nowrap">©2025 Elyvion</span>
+            <span className="whitespace-nowrap">All rights reserved</span>
           </div>
         </div>
 
