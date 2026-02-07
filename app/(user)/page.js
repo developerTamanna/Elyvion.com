@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import ScrollingBanner from './components/ScrollingBanner';
 import ServicesSection from './components/ServicesSection';
 
+
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
       <ServicesSection />
       <CertificateSection />
       <CTASection />
+      
     </>
   );
 }

@@ -52,12 +52,16 @@ export default function HistoryPage() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 pb-20">
       {/* HEADER */}
-      <div className="pt-6 bg-white">
-        <h1 className="text-xl font-bold text-center text-slate-900 mb-6">
-          Product Campaigns
-        </h1>
+      <div className="bg-white pt-20 sm:pt-24 mt-6">
+        {/* Product Campaigns Title (aligned with tabs, slightly left) */}
+        <div className="max-w-3xl mx-auto px-4">
+          <h1 className="text-xl font-bold text-slate-900">
+            Product Campaigns
+          </h1>
+        </div>
 
-        <div className="flex justify-center border-b border-gray-200 mx-4 mb-6">
+        {/* Tabs */}
+        <div className="flex justify-center gap-38 border-b border-gray-200 mx-4 mb-6 mt-6">
           {['All', 'Pending', 'Completed'].map((tab) => (
             <button
               key={tab}
@@ -84,7 +88,6 @@ export default function HistoryPage() {
             key={item.id}
             className="border border-slate-300 rounded-xl p-6 bg-white shadow-sm"
           >
-            {/* 1. TOP: ID & Badges */}
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-2">
               <div className="text-xs text-slate-500 font-medium tracking-wide">
                 <span className="text-slate-900 font-bold">
@@ -108,7 +111,6 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* 2. MIDDLE: Product Info */}
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-4">
                 <div className="w-14 h-20 flex items-center justify-center">
@@ -118,7 +120,7 @@ export default function HistoryPage() {
                     className="w-full object-contain max-h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-1">
+                <div>
                   <h3 className="text-lg font-bold text-slate-900 uppercase">
                     {item.title}
                   </h3>
@@ -139,14 +141,10 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* DIVIDER */}
             <hr className="border-slate-100 mb-6" />
 
-            {/* 3. FOOTER SECTION */}
             <div className="flex flex-col">
-              {/* Row 1: Task Code and Profit (Spaced out) */}
               <div className="flex items-start">
-                {/* Task Code - Left */}
                 <div className="w-1/2 md:w-1/3">
                   <p className="text-[12px] text-slate-500 font-medium mb-1 flex items-center gap-1">
                     <FileText size={13} /> Task Code
@@ -156,7 +154,6 @@ export default function HistoryPage() {
                   </p>
                 </div>
 
-                {/* Profit - Middle / Center */}
                 <div className="w-1/2 md:w-1/3">
                   <p className="text-[12px] text-slate-500 font-medium mb-1">
                     RM Profit
@@ -170,7 +167,6 @@ export default function HistoryPage() {
                 </div>
               </div>
 
-              {/* Row 2: Button (Right Aligned, Below stats) */}
               {item.showInsufficientButton && (
                 <div className="flex justify-end mt-4">
                   <button
