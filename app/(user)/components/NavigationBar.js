@@ -35,7 +35,7 @@ export default function NavigationBar() {
       aria-label="Bottom navigation"
       role="navigation"
     >
-      <div className="max-w-2/3 mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4">
         <div className="flex justify-around items-center py-0.5">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
