@@ -11,17 +11,40 @@ import {
   User,
   Wallet,
 } from 'lucide-react';
+import Link from 'next/link';
+
+/* =======================
+   MENU DATA (ARRAY)
+======================= */
+const menuLinks = [
+  {
+    icon: Wallet,
+    label: 'Withdrawal information',
+    href: '/account/withdrawalInfo',
+  },
+  {
+    icon: KeyRound,
+    label: 'Login password',
+    href: '/account/login-password',
+  },
+  {
+    icon: KeyRound,
+    label: 'Withdrawal password',
+    href: '/account/withdrawal-password',
+  },
+];
 
 export default function AccountPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pb-10">
       <div className="bg-white pt-20 sm:pt-24 mt-6">
         {/* Title */}
-        <div className="bg-white border-b-1 border-gray-100  pb-4">
+        <div className="bg-white border-b-1 border-gray-100 pb-4">
           <div className="max-w-2xl mx-auto px-4">
             <h1 className="text-xl font-bold text-slate-900">Account</h1>
           </div>
         </div>
+
         <div className="px-4 max-w-2xl mx-auto space-y-5 mt-6">
           {/* PROFILE CARD */}
           <div className="bg-[#FAF6EC] rounded-2xl p-6 border border-slate-200">
@@ -42,7 +65,7 @@ export default function AccountPage() {
             </div>
 
             <div className="space-y-3 mb-6">
-              <div className="bg-white rounded-xl px-4 py-3 flex gap-2 items-center ">
+              <div className="bg-white rounded-xl px-4 py-3 flex gap-2 items-center">
                 <span className="text-sm text-slate-500">Referral Code</span>
                 <div className="flex items-center gap-2">
                   <span className="font-bold">IQMK315W4</span>
@@ -53,7 +76,7 @@ export default function AccountPage() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl px-4 py-3 flex items-center ">
+              <div className="bg-white rounded-xl px-4 py-3 flex items-center">
                 <span className="text-sm text-slate-500 mr-2">
                   Credit Score
                 </span>
@@ -62,12 +85,12 @@ export default function AccountPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
-              <button className="bg-white py-3 rounded-2xl  flex items-center justify-center gap-2">
+              <button className="bg-white py-3 rounded-2xl flex items-center justify-center gap-2">
                 <PlusCircle className="text-yellow-500 transition-colors" />
                 Deposit
               </button>
 
-              <button className="bg-white py-3 rounded-2xl  flex items-center justify-center gap-2">
+              <button className="bg-white py-3 rounded-2xl flex items-center justify-center gap-2">
                 <MinusCircle className="text-yellow-500 transition-colors" />
                 Withdraw
               </button>
@@ -119,16 +142,15 @@ export default function AccountPage() {
 
           {/* MENU LINKS */}
           <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
-            <MenuItem
-              icon={<Wallet size={18} />}
-              label="Withdrawal information"
-            />
-            <MenuItem icon={<KeyRound size={18} />} label="Login password" />
-            <MenuItem
-              icon={<KeyRound size={18} />}
-              label="Withdrawal password"
-              isLast
-            />
+            {menuLinks.map((item, index) => (
+              <MenuItem
+                key={index}
+                icon={<item.icon size={18} />}
+                label={item.label}
+                href={item.href}
+                isLast={index === menuLinks.length - 1}
+              />
+            ))}
           </div>
 
           {/* LOGOUT */}
@@ -150,22 +172,27 @@ export default function AccountPage() {
   );
 }
 
-function MenuItem({ icon, label, isLast = false }) {
+/* =======================
+   MENU ITEM COMPONENT
+======================= */
+function MenuItem({ icon, label, href, isLast = false }) {
   return (
-    <button
-      className={`group w-full flex items-center justify-between p-4
-      ${!isLast ? 'border-b border-slate-100' : ''}`}
-    >
-      <div className="flex items-center gap-3">
-        <span className="text-slate-400 group-hover:text-yellow-500 transition-colors">
-          {icon}
-        </span>
-        <span className="text-sm font-medium text-slate-700">{label}</span>
-      </div>
-      <ChevronRight
-        size={18}
-        className="text-slate-300 group-hover:text-yellow-400 transition-colors"
-      />
-    </button>
+    <Link href={href}>
+      <button
+        className={`group w-full flex items-center justify-between p-4
+        ${!isLast ? 'border-b border-slate-100' : ''}`}
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-slate-400 group-hover:text-yellow-500 transition-colors">
+            {icon}
+          </span>
+          <span className="text-sm font-medium text-slate-700">{label}</span>
+        </div>
+        <ChevronRight
+          size={18}
+          className="text-slate-300 group-hover:text-yellow-400 transition-colors"
+        />
+      </button>
+    </Link>
   );
 }
