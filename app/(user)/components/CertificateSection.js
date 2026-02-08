@@ -65,17 +65,17 @@ export default function CertificateSection() {
       {/* --- PopUp --- */}
       {isOpen && (
         <div className="fixed inset-0 z-[999] shadow-2xl flex items-center justify-center px-4 sm:p-0  bg-black/50 backdrop-blur-none">
-          <div className="relative w-full sm:max-w-md md:max-w-2xl lg:max-w-4xl p-7  bg-white rounded-lg shadow-2xl flex flex-col h-full max-h-[90vh] overflow-hidden">
+          <div className="relative w-full sm:max-w-md md:max-w-2xl lg:max-w-4xl sm:p-7 p-4  bg-white rounded-lg shadow-2xl flex flex-col h-full max-h-[90vh] overflow-hidden">
             
             {/* header part */}
             <div className="flex items-center justify-between pb-5 ">
-              <h2 className=" text-lg font-semibold text-black sm:text-start text-center w-full">Certificate of Incorporation</h2>
+              <h2 className=" text-base sm:text-lg font-semibold text-black sm:text-start text-center w-full">Certificate of Incorporation</h2>
               <button onClick={toggleModal} className="text-gray-700 hover:text-black text-2xl leading-none">&times;</button>
             </div>
             <div className=" overflow-auto ">
               {/* Inner part */}
-              <div className="flex-1  max-h-[600px] h-screen  border-5 border-gray-100 rounded-tl-md rounded-bl-md bg-white p-2 sm:p-6 flex flex-col items-center">
-                <div className="relative w-[350px] h-full max-h-[500px] shadow-md rounded-md  bg-white overflow-hidden">
+              <div className="flex-1  max-h-[600px] h-screen border-3 sm:border-5 border-gray-100 rounded-tl-md rounded-bl-md bg-white p-2 sm:p-6 flex flex-col items-center justify-center">
+                <div className="relative w-full max-h-[400px] sm:w-[350px] h-full sm:max-h-[500px] shadow-md rounded-md  bg-white overflow-hidden">
                   <Image 
                     src={images[currentIndex]} 
                     alt={`Page ${currentIndex + 1}`} 
@@ -86,11 +86,11 @@ export default function CertificateSection() {
                 </div>
 
                 {/* navigation buttons */}
-                <div className="mt-4 flex items-center justify-center gap-4">
+                <div className="mt-4 flex items-center justify-center sm:gap-4 gap-2">
                   <button 
                     onClick={prevPage} 
                     disabled={currentIndex === 0}
-                    className="px-4 py-1.5 bg-gray-100 hover:bg-gray-200 disabled:opacity-30 rounded text-xs font-semibold text-gray-700 transition-colors"
+                    className="sm:px-4 px-2 py-1.5 bg-gray-100 hover:bg-gray-200 disabled:opacity-30 rounded text-xs font-semibold text-gray-700 transition-colors"
                   >
                     Previous
                   </button>
