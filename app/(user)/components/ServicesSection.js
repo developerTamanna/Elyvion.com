@@ -89,7 +89,11 @@ export default function ServicesSection() {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {SERVICES.map((service, index) => (
+<<<<<<< HEAD
+              <article 
+=======
               <article
+>>>>>>> upstream/main
                 key={index}
                 className="service-card  flex-shrink-0 w-full md:w-[calc(50%-16px)] lg:w-[calc(33%-20px)] bg-white rounded-3xl p-6 sm:p-8 shadow-lg border-t-4 border-black flex flex-col"
               >
