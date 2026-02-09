@@ -49,20 +49,22 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-8 ">
               <Link
                 href="/member-level"
-                className="flex items-center gap-2 text-gray-700 hover:text-gray-900 transition-colors"
+                className="flex items-center  text-black-700 hover:underline transition-colors"
               >
                 <svg
-                  className="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-award mr-3 h-5 w-5"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
                 </svg>
                 <span className="text-base ">Member Level</span>
               </Link>
@@ -160,7 +162,7 @@ export default function Header() {
 
       {/* Right Sidebar */}
       <div
-        className={`fixed top-0 right-0 bottom-0 overflow-auto h-full w-70 bg-[#1a5f6f] z-70 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 bottom-0 overflow-auto h-full w-70 bg-[#1a5f6f] z-70 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {/* Close Button */}
         <div className="flex justify-end p-4">
@@ -458,7 +460,7 @@ export default function Header() {
 
               {/* Contact Us Button */}
               <button
-                onClick={() => window.open("https://t.me/elyvion", "_blank")}
+                onClick={() => window.open('https://t.me/elyvion', '_blank')}
                 className="w-full bg-[#1a5f6f] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#164d5c] transition-colors"
               >
                 Contact Us
