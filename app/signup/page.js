@@ -59,7 +59,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md bg-white rounded-xl shadow-xl p-8">
         <div className="text-center mb-6">
           <h2 className="text-3xl font-bold text-gray-900">Create Account</h2>
-          <p className="text-gray-600 text-sm mt-1">
+          <p className="text-[#0f5366] text-sm mt-1">
             Start your journey toward financial independence with us
           </p>
         </div>
