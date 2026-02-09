@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  const { pathname } = request.nextUrl;
+  /* const { pathname } = request.nextUrl;
   
   // Public routes that don't require authentication
   const publicRoutes = ['/', '/login'];
@@ -22,7 +22,7 @@ export function middleware(request) {
   // If authenticated user tries to access login page, redirect to home
   if (pathname === '/login' && isAuthenticated) {
     return NextResponse.redirect(new URL('/', request.url));
-  }
+  } */
   
   return NextResponse.next();
 }

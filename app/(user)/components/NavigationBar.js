@@ -35,7 +35,7 @@ export default function NavigationBar() {
       aria-label="Bottom navigation"
       role="navigation"
     >
-      <div className="max-w-2/3 mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4">
         <div className="flex justify-around items-center py-0.5">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
@@ -44,7 +44,7 @@ export default function NavigationBar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex flex-col items-center justify-center min-w-[60px] py-2 px-3 group focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded-lg"
+                className="flex flex-col items-center justify-center min-w-[60px] py-2 px-3 group    rounded-lg"
                 aria-label={item.name}
                 aria-current={isActive ? 'page' : undefined}
               >

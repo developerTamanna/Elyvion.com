@@ -5,6 +5,14 @@ export function generateMetadata({ title, description, path }) {
   return {
     title: title ? `${title} | Elyvion` : 'Elyvion',
     description: description || 'Experience curated shopping made simple, secure, and seamless.',
+    
+      // Fav icon 
+    icons: {
+      icon: 'logo/logo.png',
+      shortcut: '/logo.png',
+      apple: '/logo.png',
+    },
+
     openGraph: {
       title: title || 'Elyvion',
       description: description || 'Experience curated shopping made simple, secure, and seamless.',
@@ -29,4 +37,3 @@ export function generateMetadata({ title, description, path }) {
     },
   };
 }
-

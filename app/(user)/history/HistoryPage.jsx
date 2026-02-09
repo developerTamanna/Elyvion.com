@@ -52,16 +52,16 @@ export default function HistoryPage() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 pb-20">
       {/* HEADER */}
-      <div className="bg-white pt-20 sm:pt-24 mt-6">
+      <div className="bg-white pt-20 sm:pt-24 mt-6 flex flex-col items-center justify-center">
         {/* Product Campaigns Title (aligned with tabs, slightly left) */}
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-3xl w-full mx-auto px-4">
           <h1 className="text-xl font-bold text-slate-900">
             Product Campaigns
           </h1>
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-38 border-b border-gray-200 mx-4 mb-6 mt-6">
+        <div className="inline-flex items-center mx-auto justify-between w-full max-w-3xl gap-4 border-b border-gray-200 md:mx-4 mb-6 mt-6">
           {['All', 'Pending', 'Completed'].map((tab) => (
             <button
               key={tab}
@@ -82,7 +82,7 @@ export default function HistoryPage() {
       </div>
 
       {/* CARD LIST */}
-      <div className="px-4 max-w-3xl mx-auto space-y-6">
+      <div className="px-4 w-full max-w-3xl mx-auto space-y-6">
         {filteredCampaigns.map((item) => (
           <div
             key={item.id}

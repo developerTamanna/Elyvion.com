@@ -6,24 +6,24 @@ import Link from 'next/link';
 export default function AboutSection() {
   return (
     <section className="py-2  bg-white overflow-hidden">
-      <div className=" mx-auto px-17 ">
-        <div className="grid md:grid-cols-2 gap-0.5  items-center">
+      <div className=" mx-auto px-5 md:px-10 lg:px-17 xl:px-30  2xl:px-48">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-0.5  items-center justify-center">
           {/* Left Column: Image - বড় হবে এবং Y-axis বরাবর সম্পূর্ণ */}
-          <div className="relative order-2 md:order-1 h-auto w-full">
-            <div className="relative order-2 md:order-1 w-full max-w-[498px] min-h-[400px] h-[750px]">
+          <div className="relative inline-flex items-center justify-center  h-auto w-full  md:px-0 md:pr-10">
+            <div className="relative  w-full max-w-[500px] md:max-w-full aspect-[8/12] min-h-[500px] max-h-[750px] overflow-hidden">
               <Image
                 src="/images/hero.png"
                 alt="Elyvion Team"
                 fill
-                className="object-fit rounded-3xl w-full h-full object-center"
+                className="object-fit  rounded-3xl w-full h-full object-center"
                 priority
               />
             </div>
           </div>
 
           {/* Right Column: Content */}
-          <div className="order-1 md:order-2 flex flex-col justify-center">
-            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight mb-10">
+          <div className=" flex flex-col justify-center md:pt-0 pt-10 md:pl-0 pl-2">
+            <h2 className="relative text-black text-2xl md:text-3xl xl:text-4xl font-bold tracking-tight leading-tight md:mb-10 mb-7">
               We blend creative and performance
               <span className="absolute left-0 top-0 transform -translate-y-full -translate-x-full md:pr-2">
                 <svg
