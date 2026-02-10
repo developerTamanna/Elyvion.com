@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CTASection() {
   return (
-    <section className="px-6 sm:px-8 xl:px-24 pt-14 sm:pt-16 bg-transparent mb-14 sm:mb-14 md:-mb-25 relative z-20">
+    <section className="px-6 sm:px-8 xl:px-24 pt-14 sm:pt-16 bg-gray-50 mb-14 sm:mb-14 md:-mb-25 relative z-20">
       <div className="relative w-full ">
         {/* decorative icon */}
         <span className="absolute -left-7  -top-7 ">
@@ -65,7 +65,7 @@ export default function CTASection() {
 
           {/* Logo */}
           <div
-            className="relative flex items-center justify-center 
+            className="relative flex items-center justify-center
             sm:min-h-[330px] min-h-[230px] sm:max-h-[180px] md:min-h-[430px] xl:min-h-[460px]
           bg-gradient-to-br from-gray-900 to-black p-0 md:p-8"
           >
