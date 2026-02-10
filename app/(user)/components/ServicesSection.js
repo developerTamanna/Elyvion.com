@@ -117,15 +117,13 @@ export default function ServicesSection() {
               >
                 {/* Icon and Title */}
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center shrink-0">
-                    <svg
-                      className="w-8 h-8 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
-                    </svg>
-                  </div>
+                  {/* UPDATED: Injects the SVG directly from data.
+                      Added [&>svg]:w-full [&>svg]:h-full to ensure the SVG fills the w-14 h-14 container */}
+                  <div
+                    className="w-14 h-14 shrink-0 [&>svg]:w-full [&>svg]:h-full"
+                    dangerouslySetInnerHTML={{ __html: service.icon }}
+                  />
+
                   <h3 className="text-xl md:text-2xl font-bold text-black">
                     {service.title}
                   </h3>
